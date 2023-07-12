@@ -4,20 +4,11 @@ pipeline {
     stages {
         stage("Build") {
             when {
-                branch 'main'
+                buildingTag()
             }
-            steps {
-                echo "print master"
+            step {
+                echo "hi bye tag"
             }
         }
-        stage("Build Dev"){
-            when {
-                branch 'dev'
-            }
-            steps {
-                echo " print dev"
-            }
-         }
-        
     }
 }
