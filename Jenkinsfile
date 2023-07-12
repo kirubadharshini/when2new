@@ -2,22 +2,21 @@
 pipeline {
     agent any
     stages {
-        stage("Build") {
+        stage("Build master") {
             when {
                 branch 'master'
             }
-            step {
+            steps {
                 echo "print master"
             }
-        stage("Build Dev")
+         }
+        stage("Build Dev"){
             when {
                 branch 'dev'
             }
-            step {
+            steps {
                 echo " print dev"
             }
-        
-            
-        }
+         }
     }
 }
