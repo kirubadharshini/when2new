@@ -9,15 +9,15 @@ pipeline {
             steps {
                 echo "print master"
             }
-        stage("Build Dev")
+        }
+        stage("Build Dev"){
             when {
                 branch 'dev'
             }
             steps {
                 echo " print dev"
             }
-        
-            
         }
+        
     }
 }
