@@ -7,7 +7,7 @@ pipeline {
                 buildingTag()
             }
             steps {
-                echo "hi bye tag"
+                echo "hi tag"
             }
         }
     }
