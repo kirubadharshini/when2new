@@ -7,7 +7,7 @@ pipeline {
                 buildingTag()
             }
             steps {
-                echo "hi tag"
+                echo "hi"
             }
         }
     }
