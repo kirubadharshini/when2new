@@ -6,14 +6,14 @@ pipeline {
             when {
                 branch 'main'
             }
-            step {
+            steps {
                 echo "print master"
             }
         stage("Build Dev")
             when {
                 branch 'dev'
             }
-            step {
+            steps {
                 echo " print dev"
             }
         
