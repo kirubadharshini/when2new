@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage("Build") {
             when {
-                branch 'master'
+                branch 'main'
             }
             step {
                 echo "print master"
