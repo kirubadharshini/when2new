@@ -6,7 +6,7 @@ pipeline {
             when {
                 buildingTag()
             }
-            step {
+            steps {
                 echo "hi bye tag"
             }
         }
