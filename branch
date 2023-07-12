@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+    stages {
+        stage("Build") {
+            when {
+                branch 'main'
+            }
+            steps {
+                echo "print master"
+            }
+        }
+        stage("Build Dev"){
+            when {
+                branch 'dev'
+            }
+            steps {
+                echo " print dev"
+            }
+         }
+        
+    }
+}
