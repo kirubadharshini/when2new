@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage("Build tag") {
             when {
-                buildingTag()
+                changeRequest()
             }
             steps {
                 echo "hi"
