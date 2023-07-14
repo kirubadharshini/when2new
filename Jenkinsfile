@@ -1,14 +1,14 @@
-
-pipeline {
-    agent any
-    stages {
-        stage("Build tag") {
-            when {
-                changeRequest()
-            }
-            steps {
-                echo "hi"
-            }
-        }
-    }
-}
+pipeline {	
+    agent any	
+    options {	
+        checkoutToSubdirectory('someSubDir')	
+    }	
+    stages {	
+        stage('Build') {	
+            steps {	
+                sleep(time: 10, unit: 'SECONDS') 	
+                echo 'Hello World'	
+            }	
+        }	
+    }	
+}	
